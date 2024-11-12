@@ -106,4 +106,35 @@
   .overlay {
       font-family: "oswald";
   }
-  
+
+@media (max-width: 768px) {
+    .collections-section {
+        padding: 20px;
+    }
+
+    .collections-section h1 {
+        font-size: 28px;
+    }
+
+    .collections-section p {
+        font-size: 16px;
+    }
+
+    .collections-grid {
+        grid-template-columns: 1fr; /* One column layout for small screens */
+    }
+
+    .collection-item.large {
+        grid-column: span 1; /* Make large items span only one column */
+        grid-row: span 1;
+    }
+
+    .overlay h2 {
+        font-size: 20px;
+    }
+
+    .overlay button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
